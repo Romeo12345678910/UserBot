@@ -5,7 +5,7 @@ import os
 import time  
 
 # Inserisci i tuoi dati API di Telegram  
-api_id = int(os.getenv("23281579"))  
+api_id = os.getenv("23281579")  
 api_hash = os.getevn("16ba69a4299d98d2c7259a8ce33f155c")  
 
 client = TelegramClient('userbot', api_id, api_hash) 
