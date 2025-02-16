@@ -10,6 +10,8 @@ api_hash = '16ba69a4299d98d2c7259a8ce33f155c'
 
 client = TelegramClient('userbot', api_id, api_hash) 
 
+client.start()
+
 muted_users = set()  
 user_data = {}  # Dizionario per memorizzare i dati degli utenti (PayPal e Wallet)
 
