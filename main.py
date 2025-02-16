@@ -4,13 +4,14 @@ from gtts import gTTS
 import os  
 import time  
 
-# Inserisci i tuoi dati API di Telegram  
-api_id = 23281579  
-api_hash = '16ba69a4299d98d2c7259a8ce33f155c'  
+api_id = 23281579
+api_hash = "16ba69a4299d98d2c7259a8ce33f155c"
+bot_token = "7994744605:AAHlZx_FN1p-HGu150sQixS_93rTY4Ibd6U"  
 
-client = TelegramClient('userbot', api_id, api_hash) 
+client = TelegramClient('userbot', api_id, api_hash).start(bot_token=bot_token)
 
-client.start()
+print("avviato")
+
 client.run_until_diaconnected()
 muted_users = set()  
 user_data = {}  # Dizionario per memorizzare i dati degli utenti (PayPal e Wallet)
